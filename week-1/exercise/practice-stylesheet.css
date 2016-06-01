@@ -1,0 +1,54 @@
+body {
+  background-color: gray;
+  padding: 15px;
+}
+
+h1, h2, h3, p {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+}
+
+.intro {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  background: #ff0030;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal;
+}
+.intro:hover {
+  background: white;
+  color: red;
+}
+
+.images {
+  text-align: center;
+}
+
+.caption {
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+img {
+  margin: 10px auto;
+  display: block;
+  padding: 20px 0 0 0;
+}
+
+img.cornhole {
+  padding: 60px 40px 40px 0;
+  width: 300px;
+  height: auto;
+  transform: rotate(90deg);
+  vertical-align: center;
+}
