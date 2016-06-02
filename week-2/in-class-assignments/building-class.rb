@@ -11,6 +11,13 @@ class Building
     @colors = paint_colors
     @has_ac = ac
   end
+
+  def self.knockknock
+    puts "Who's there?"
+
+  def ring_bell
+    puts "ding dong!"
+
 end
 
 # Build a Firehouse
@@ -28,7 +35,9 @@ class Hospital < Building
     @patients = num_patients
     super
   end
-end
+
+  def ring_bell
+  puts "WOO OOO WOO OOO WOO OOO!!!!"
 
 # Build the Cleveland Clinic
 cleveland_clinic = Hospital.new(1000,10,5,["concrete", "wood"], ["white"], true)
