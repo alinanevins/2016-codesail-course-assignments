@@ -16,5 +16,19 @@ end
 # Build a Firehouse
 firehouse = Building.new(10,4,3,["wood", "metal"],["red"], true)
 
-#Build a Hospital
-hospital = Building.new(30,10,4,["concrete", "metal"], ["white", "red"], true)
+# Build a Train Station
+station = Building.new(30,10,4,["concrete", "metal"], ["white", "red"], true)
+
+#########################
+
+# Create a new subclass for Hospital
+class Hospital < Building
+  attr_accessor :patients
+  def initialize(num_patients, wall_count, story_count, materials, paint_colors, ac)
+    @patients = num_patients
+    super
+  end
+end
+
+# Build the Cleveland Clinic
+cleveland_clinic = Hospital.new(1000,10,5,["concrete", "wood"], ["white"], true)
