@@ -14,9 +14,15 @@ class Building
 
   def self.knockknock
     puts "Who's there?"
+  end
 
   def ring_bell
     puts "ding dong!"
+  end
+
+  def windows
+    puts @num_windows
+  end
 
 end
 
@@ -37,7 +43,9 @@ class Hospital < Building
   end
 
   def ring_bell
-  puts "WOO OOO WOO OOO WOO OOO!!!!"
+    puts "WOO OOO WOO OOO WOO OOO!!!!"
+  end
+end
 
 # Build the Cleveland Clinic
 cleveland_clinic = Hospital.new(1000,10,5,["concrete", "wood"], ["white"], true)
